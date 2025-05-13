@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // Criação de dois objetos do tipo ContaBancaria
         ContaBancaria c1 = new ContaBancaria(1910, "Gabriel", 1000.00);
-        ContaBancaria c2 = new ContaBancaria(1910, "Maria", 15000.00);
+        ContaBancaria c2 = new ContaBancaria(1210, "Maria", 15000.00);
 
         // Exibição das informações da primeira conta
         exibirConta(c1);
@@ -25,7 +25,7 @@ public class Main {
                 "\nNome do cliente: " + conta.getTitular());
 
         // Exibe o saldo inicial da conta
-        System.out.println("Saldo inicial " + conta.getSaldo());
+        System.out.println("Saldo inicial R$" + conta.getSaldo());
 
         // Realiza um depósito de R$1000,00
         conta.depositar(1000);
@@ -44,6 +44,6 @@ public class Main {
         }
 
         // Exibe o saldo final após as operações
-        System.out.println("Saldo final conta1: " + conta.getSaldo());
+        System.out.println("Saldo final da conta R$" + conta.getSaldo());
     }
 }
